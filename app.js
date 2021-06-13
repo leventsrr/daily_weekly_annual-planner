@@ -101,7 +101,7 @@ for(let i =0 ; i<allButtons.length ; i++){
 //deletes the desired plan from both the screen and local storage
 const deletePlan = (event) =>{
     let trush = event.target.className
-    if(trush[2] === 'r'){
+    if(trush[8] === 'i'){
         plans.innerHTML = ""
         let plansArray = JSON.parse(localStorage.getItem(`${datePicker.value}`))
         plansArray.splice(plansArray.indexOf(event.target.closest('div').innerText),1)
