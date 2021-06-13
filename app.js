@@ -28,8 +28,8 @@ const getDate = () =>{
     let hour = time.getHours()
     let minute = time.getMinutes()
     let second = time.getSeconds()
-    let days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
-    let day = days[time.getDay()-1]
+    let days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+    let day = days[time.getDay()]
     hour < 10 ? hour=`0+${hour}` : hour=hour
     minute < 10 ? minute=`0${minute}` : minute=minute
     second < 10 ? second=`0${second}` : second=second
