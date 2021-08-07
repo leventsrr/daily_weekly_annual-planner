@@ -30,7 +30,7 @@ const getDate = () =>{
     let second = time.getSeconds()
     let days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
     let day = days[time.getDay()]
-    hour < 10 ? hour=`0+${hour}` : hour=hour
+    hour < 10 ? hour=`0${hour}` : hour=hour
     minute < 10 ? minute=`0${minute}` : minute=minute
     second < 10 ? second=`0${second}` : second=second
     timeSpace.innerHTML = `${hour}:${minute}:${second}  ${day}`
